@@ -1,0 +1,124 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.brand-wrapper {
+  background-color: #30b0a7;
+  min-width: 250px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.portfolio-links {
+  width: 300px;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.wrapper {
+  background-image: url("background.jpg");
+  min-height: 700px;
+  background-repeat: repeat;
+  padding-top: 20px;
+  min-width: 250px;
+}
+
+.box {
+  background-color: #ffffff;
+  max-width: 650px;
+  min-width: 250px;
+}
+
+h3 {
+  color: #30b0a7;
+}
+
+.fa {
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  padding: 5px;
+}
+
+.disclaimer {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 1px;
+  background-color: #292c2e;
+  padding: 11px 0;
+}
+
+footer {
+  background-color: #292c2e;
+  color: #ffffff;
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.25;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.green-bar {
+  background-color: #30b0a7;
+  height: 10px;
+}
+
+.img-thumbnail {
+  max-width: 200px;
+}
+
+.project-container {
+  position: relative;
+}
+
+.project-description {
+  background-color: #30b0a7;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  max-width: 200px;
+  margin-top: 110px;
+  z-index: 10;
+  text-align: center;
+}
+
+@media (max-width: 575px) {
+  .brand-wrapper {
+    width: 100%;
+  }
+
+  .portfolio-links {
+    margin: 0 auto;
+    width: 250px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .wrapper {
+    min-height: 1080px;
+  }
+}
+
