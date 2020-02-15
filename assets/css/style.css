@@ -2,9 +2,35 @@ html {
   height: 100%;
 }
 
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
 body {
+  height: 100%;
+  overflow: hidden;
+}
+
+.outer {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.profile-container {
+  position: relative;
+}
+
+.profile-description {
   height: 100%;
 }
 
@@ -33,16 +59,24 @@ body {
 
 .wrapper {
   background-image: url("../Images/background.jpg");
-  min-height: 700px;
   background-repeat: repeat;
   padding-top: 20px;
   min-width: 250px;
+  overflow: auto;
+  height: 100%;
+  /* height: 100%;
+  position: absolute; */
 }
 
 .box {
   background-color: #ffffff;
   max-width: 650px;
   min-width: 250px;
+}
+
+.profile-img {
+  float: left;
+  width: 100%;
 }
 
 h3 {
@@ -77,6 +111,9 @@ footer {
   line-height: 1.25;
   text-align: center;
   flex-grow: 1;
+  bottom: 0;
+  position: absolute;
+  z-index: 100;
 }
 
 .green-bar {
@@ -105,6 +142,10 @@ footer {
   text-align: center;
 }
 
+.linkedin {
+  word-break: break-all;
+}
+
 @media (max-width: 575px) {
   .brand-wrapper {
     width: 100%;
@@ -114,6 +155,16 @@ footer {
     margin: 0 auto;
     width: 250px;
   }
+
+  .box {
+    margin-bottom: 120px;
+  }
+}
+
+@media (min-width: 575px) {
+  .profile-img {
+    max-width: 150px;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -121,4 +172,3 @@ footer {
     min-height: 1080px;
   }
 }
-
