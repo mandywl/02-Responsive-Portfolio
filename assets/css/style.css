@@ -1,5 +1,9 @@
 html {
-  height: 100%;
+    /* Positioning */
+    position: relative;
+
+    /* Box-model */
+    min-height: 100%;
 }
 
 *,
@@ -8,43 +12,18 @@ html {
   box-sizing: border-box;
 }
 
-body {
-  height: 100%;
-  overflow: hidden;
-}
-
-.outer {
-  overflow: hidden;
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.main {
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-}
-.profile-container {
-  position: relative;
-}
-
-.profile-description {
-  height: 100%;
-}
-
-.brand-wrapper {
-  background-color: #30b0a7;
-  min-width: 250px;
+/* add space for fixed nav */
+main {
+  margin: 80px 0;
 }
 
 .navbar {
   padding: 0;
 }
 
-.portfolio-links {
-  width: 300px;
+.brand-wrapper {
+  background-color: #30b0a7;
+  min-width: 250px;
 }
 
 .navbar-nav {
@@ -57,30 +36,9 @@ body {
   text-align: center;
 }
 
-.wrapper {
+body {
   background-image: url("../Images/background.jpg");
   background-repeat: repeat;
-  padding-top: 20px;
-  min-width: 250px;
-  overflow: auto;
-  height: 100%;
-  /* height: 100%;
-  position: absolute; */
-}
-
-.box {
-  background-color: #ffffff;
-  max-width: 650px;
-  min-width: 250px;
-}
-
-.profile-img {
-  float: left;
-  width: 100%;
-}
-
-h3 {
-  color: #30b0a7;
 }
 
 .fa {
@@ -104,16 +62,22 @@ h3 {
 }
 
 footer {
-  background-color: #292c2e;
+    /* Positioning */
+    position: absolute;
+    bottom: 0;
+  
+    /* Box-model */
+    width: 100%;
+    height: 60px;
+  
+    /* Visual */
+    background-color: #666;
+  /* background-color: #292c2e; */
   color: #ffffff;
   width: 100%;
   margin: 0 auto;
   line-height: 1.25;
   text-align: center;
-  flex-grow: 1;
-  bottom: 0;
-  position: absolute;
-  z-index: 100;
 }
 
 .green-bar {
@@ -128,6 +92,30 @@ footer {
 .project-container {
   position: relative;
 }
+
+.block {
+  background-color: #fff;
+
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.block-header {
+  /* Typography */
+  color: #4aaaa5;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+#about-image {
+  /* Positioning */
+  float: left;
+
+  /* Box-model */
+  width: 200px;
+  margin: 0 20px 10px 0;
+}
+/* END ABOUT-ME PAGE */
 
 .project-description {
   background-color: #30b0a7;
@@ -147,28 +135,12 @@ footer {
 }
 
 @media (max-width: 575px) {
-  .brand-wrapper {
-    width: 100%;
-  }
-
   .portfolio-links {
     margin: 0 auto;
     width: 250px;
   }
 
-  .box {
-    margin-bottom: 120px;
-  }
-}
-
-@media (min-width: 575px) {
-  .profile-img {
-    max-width: 150px;
-  }
-}
-
-@media (min-width: 1600px) {
-  .wrapper {
-    min-height: 1080px;
+  #about-image {
+    width:100%;
   }
 }
