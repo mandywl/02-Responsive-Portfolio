@@ -3,7 +3,7 @@
 ## Overview
 * Created the following pages: `index.html`, `portfolio.html` and `contact.html` using Bootstrap's grid system (containers, rows, and columns)
 
-* On an `xs` screen, content takes up the entire screen.
+* On an `xs` screen, content takes up the entire screen
 
 * Portfolio contains name, email and phone number
 
